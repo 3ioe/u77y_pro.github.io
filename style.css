@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&display=swap');* {
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+  
+  .navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: #4dbf00;
+    cursor: default;
+  }
+  
+  .menu-container {
+    flex: 6;
+  }
+  
+  .menu-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-list-item {
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .menu-list-item.active {
+    font-weight: bold;
+  }
+  .profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .profile-text-container {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+   .texto {
+       color: white;
+   }
+
+   .toggle-icon{
+       color: goldenrod;
+   }
+
+
+   .toggle-ball {
+       width: 18px;
+       height: 18px;
+       background-color: black;
+       position: absolute;
+       right: 1px;
+       border-radius: 50%;
+       cursor: pointer;
+    }
+
+    .left-menu-icon {
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+   .container {
+       background-color: #151515;
+       min-height: calc(100vh - 50px);
+       color: white;
+   }
+.movie-list-warp {
+  position: relative;
+}
+
+   .content-container {
+font-size: 20px; margin-left: 50px
+}
+
+.featured-content {
+    height: 100vh;
+    padding: 50px;
+    
+}
+
+.featured-title {
+    width:200px;
+    
+}
+
+.featured-desc {
+    width: 500px;
+    color: lightgrey;
+  
+  }
+
+.featured-button {
+    background-color: #262926;
+    color: white;
+    padding: 10px;
+    
+    border-radius: 15px;
+    border: solid 1px white;
+    outline: none;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.movie-list-title {
+    background-color: #151515;
+    z-index: 10000;
+}
+
+.movie-list-cont {
+   padding: 20px;
+
+}
+
+.movie-list-item-img{
+             width: 270px;
+             height: 180px;
+             background-size: cover;
+             border-radius: 5px;
+             transition: all 0.7s ease-in-out;
+}
+.movie-list-item:hover .movie-list-item-img {
+   transform: scale(1.2);
+   opacity: 0.5;
+   filter: blur(2px);
+}
+
+.movie-list-item:hover  .movie-list-item-title {
+  opacity: 1;
+}
+.movie-list-item:hover  .movie-parg {
+  opacity: 1;
+}
+.movie-list-item:hover .movie-list-button {
+  opacity: 1;
+}
+.movie-list {
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 26px;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  left:50px;
+  opacity: 0;
+  text-shadow: 0px 0px 10px gray;
+  transition: 1s all ease-in-out;
+  text-align: center;
+}
+
+
+.movie-parg{
+  background-color: #333;
+  padding: 0px;
+  font-size: 14px;
+  border-radius: 5px;
+  position: absolute;
+  top:25%;
+  left:20px;
+  opacity: 0;
+  text-align: center;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+
+}
+
+.movie-list-button {
+  background-color: #262926;
+  color: white;
+  padding: 10px ;
+  border-radius: 10px;
+  border: solid 1px white;
+  outline: none;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  bottom: 33px;
+  left: 90px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+
+}
+
+.bit {
+  background-color: #262926;
+  color: white;
+  padding: 10px ;
+  border-radius: 10px;
+  border: solid 1px white;
+  outline: none;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+ margin-top: 10px; 
+  
+}
+
+.abo7 {
+  color: gold;
+}
+
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
